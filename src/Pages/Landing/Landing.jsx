@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import image from '../../assets/image.png'
-import './Landing.css'
-import axios from 'axios';
+import './Landing.css';
 import { useNavigate } from 'react-router-dom';
 import {jwtDecode} from 'jwt-decode';
 import { toast } from "react-toastify"
