@@ -38,6 +38,12 @@ const Register = ({loading}) => {
            loading(false)
         }  
        }
+
+       useEffect(()=>{
+        if(localStorage.getItem('token')){
+          navigate('/land')
+        }
+      },[])
     return (
         <div className="app w-100 row d-flex justify-content-center align-items-center mx-auto">
         <div className="indiv bg-white col-10 col-sm-6 col-md-5 col-lg-4 col-xl-3 shadow p-3 rounded-4">
